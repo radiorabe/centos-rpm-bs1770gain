@@ -32,10 +32,7 @@ License:        GPLv2
 URL:            http://bs1770gain.sourceforge.net/
 Source0:        http://downloads.sourceforge.net/%{name}/%{name}-%{version}.tar.gz
 
-# Upstream builds their static releases against avutil-55, swresample-2,
-# avcodec-57 and avformat-57 (as of 2015-09-12, 0.4.6). We do the same here by
-# requiring a newer ffmpeg version.
-BuildRequires:  ffmpeg-devel >= 3.3
+BuildRequires:  ffmpeg-devel
 BuildRequires:  sox-devel
 
 %description
