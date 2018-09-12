@@ -1,25 +1,13 @@
 # centos-rpm-bs1770gain
-CentOS 7 RPM Specfile for [BS1770GAIN](http://bs1770gain.sourceforge.net/)
-which is part of [Radio Bern RaBe's Audio Packages for Enterprise Linux (RaBe
-APEL)](https://build.opensuse.org/project/show/home:radiorabe:audio).
 
-## Usage
-There are pre-built binary packages for CentOS 7 available on [RaBe APEL
-package
-repository](https://build.opensuse.org/project/show/home:radiorabe:audio),
-which can be installed as follows:
+**This package is not supported anymore.**
 
-```bash
-# Add EPEL repository
-yum install epel-release
+We at Radio Bern RaBe used the BS1770GAIN software to normalize our radio broadcast according to the EBU R128 standard. We packaged the software for CentOS/RHEL systems for our own internal use, and possibly for others to use.
 
-# Add Nux Dextop repository
-yum install http://li.nux.ro/download/nux/dextop/el7/x86_64/nux-dextop-release-0-5.el7.nux.noarch.rpm
+Sadly, the public homepage for the BS1770GAIN software has been used by its author to distribute ideas, that we deeply oppose. We fear that our support for the said software might be wrongly interpreted as support for these ideas. We respect the right of the author to publicly share his opinion, but reserve the right to do the same.
 
-# Add RaBe APEL repository
-curl -o /etc/yum.repos.d/home:radiorabe:audio.repo \
-     http://download.opensuse.org/repositories/home:/radiorabe:/audio/CentOS_7/home:radiorabe:audio.repo
+Our free radio station is run by two hundred active members to create a daily program in twenty different languages. The sole existence of our radio station is empirical proof, that people from different cultures and races _can_ coexist peacefully. Most of us would go much further, and describe our shared experiences not only as mere coexistence, but as vital part or our daily lives. 
 
-# Install BS1770GAIN
-yum install bs1770gain
-```
+By any means necessary we want to distance our-selfs from the misanthropic statements made by the author of the BS1770GAIN software. We do not see this as a left vs. right political argument. These ideas violate our core beliefs as hackers, open source activists, and democrats. 
+
+For EBU R128 normalization we recommend the use of https://github.com/slhck/ffmpeg-normalize.
